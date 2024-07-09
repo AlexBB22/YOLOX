@@ -174,7 +174,7 @@ def preproc(image, expected_size, swap=(2, 0, 1)):
             (ew - nw) // 2:(ew - nw) // 2 + nw,
             :] = image.copy()
     new_img = new_img.transpose(swap)
-    new_img = np.ascontiguousarray(new_img, dtype=np.float32)
+    new_img = np.ascontiguousarray(new_img, dtype=np.uint8)
     return new_img, scale
 
 
