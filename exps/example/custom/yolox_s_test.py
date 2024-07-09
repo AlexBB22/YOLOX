@@ -11,6 +11,8 @@ class Exp(MyExp):
         super(Exp, self).__init__()
         self.depth = 0.33
         self.width = 0.50
+        self.test_size = (640,640)
+        self.input_size = (640,640)
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
 
         # Define yourself dataset path
@@ -19,7 +21,6 @@ class Exp(MyExp):
         # self.val_ann = "/kaggle/input/d/alexandrubobe2/safety2017/val2017/_annotations.coco.json"
 
         self.num_classes = 5
-        self.test_size = (640,640)
         self.max_epoch = 300
         self.data_num_workers = 4
         self.eval_interval = 1
