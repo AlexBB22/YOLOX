@@ -18,7 +18,7 @@ class Exp(MyExp):
         # self.train_ann = "/kaggle/input/d/alexandrubobe2/safety2017/train2017/_annotations.coco.json"
         # self.val_ann = "/kaggle/input/d/alexandrubobe2/safety2017/val2017/_annotations.coco.json"
 
-        self.num_classes = 5
+        self.num_classes = 8
 
         self.max_epoch = 300
         self.data_num_workers = 4
