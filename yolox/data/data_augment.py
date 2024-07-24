@@ -153,7 +153,8 @@ def preproc(img, input_size, swap=(2, 0, 1)):
     padded_img[: int(img.shape[0] * r), : int(img.shape[1] * r)] = resized_img
 
     padded_img = padded_img.transpose(swap)
-    padded_img = np.ascontiguousarray(padded_img, dtype=np.float32)
+    print("###USING UINT8")
+    padded_img = np.ascontiguousarray(padded_img, dtype=np.uint8)
     return padded_img, r
 
 # def preproc(image, expected_size, swap=(2, 0, 1)):
