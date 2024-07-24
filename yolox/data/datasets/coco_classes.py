@@ -85,10 +85,20 @@
 #     "toothbrush",
 # )
 
+# COCO_CLASSES = (
+#     "helmet",
+#     "no-helmet",
+#     "no-vest",
+#     "person",
+#     "vest",
+#     )
+
 COCO_CLASSES = (
-    "helmet",
-    "no-helmet",
-    "no-vest",
-    "person",
-    "vest",
-    )
+    "blue", 
+    "glass", 
+    "head", 
+    "person", 
+    "red", 
+    "vest", 
+    "white", 
+    "yellow")
